@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "数学训练",
+  "settings": "设置",
+  "progress": "进度",
+  "back": "返回",
+  "question": "问题",
+  "score": "分数",
+  "enterAnswer": "输入您的答案",
+  "submit": "提交",
+  "difficulty": "难度",
+  "numberOfQuestions": "问题数量",
+  "keypadType": "键盘类型",
+  "language": "语言",
+  "enableSound": "启用声音",
+  "sessionComplete": "会话完成！",
+  "correct": "正确",
+  "incorrect": "错误",
+  "timeElapsed": "用时",
+  "questionsPerMinute": "题/分钟",
+  "playAgain": "再玩一次",
+  "backToModules": "返回模块",
+  "excellent": "优秀！",
+  "good": "很好！",
+  "fair": "继续练习！",
+  "needsPractice": "需要更多练习",
+  "totalSessions": "总会话数",
+  "averageAccuracy": "平均准确率",
+  "totalMinutes": "总分钟数",
+  "filterByModule": "按模块筛选",
+  "allModules": "所有模块",
+  "highScores": "最高分",
+  "progressChart": "进度图表",
+  "difficulties": {
+    "easy": "简单",
+    "medium": "中等",
+    "hard": "困难",
+    "expert": "专家"
+  },
+  "keypadTypes": {
+    "calculator": "计算器样式",
+    "phone": "手机样式"
+  },
+  "modules": {
+    "addition": {
+      "title": "加法",
+      "description": "练习加法"
+    },
+    "subtraction": {
+      "title": "减法",
+      "description": "练习减法"
+    },
+    "multiplication": {
+      "title": "乘法",
+      "description": "练习乘法"
+    },
+    "division": {
+      "title": "除法",
+      "description": "练习除法"
+    },
+    "multiplicationTables": {
+      "title": "乘法表",
+      "description": "学习乘法表"
+    },
+    "squareRoots": {
+      "title": "平方根",
+      "description": "练习平方根"
+    },
+    "exponents": {
+      "title": "指数",
+      "description": "练习指数"
+    },
+    "memoryTraining": {
+      "title": "记忆训练",
+      "description": "训练心算"
+    },
+    "mixedOperations": {
+      "title": "混合运算",
+      "description": "练习所有运算"
+    }
+  }
+}

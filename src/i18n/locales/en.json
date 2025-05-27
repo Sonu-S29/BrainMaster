@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "Math Workout",
+  "settings": "Settings",
+  "progress": "Progress",
+  "back": "Back",
+  "question": "Question",
+  "score": "Score",
+  "enterAnswer": "Enter your answer",
+  "submit": "Submit",
+  "difficulty": "Difficulty",
+  "numberOfQuestions": "Number of Questions",
+  "keypadType": "Keypad Type",
+  "language": "Language",
+  "enableSound": "Enable Sound",
+  "sessionComplete": "Session Complete!",
+  "correct": "Correct",
+  "incorrect": "Incorrect",
+  "timeElapsed": "Time Elapsed",
+  "questionsPerMinute": "Questions/Min",
+  "playAgain": "Play Again",
+  "backToModules": "Back to Modules",
+  "excellent": "Excellent work!",
+  "good": "Good job!",
+  "fair": "Keep practicing!",
+  "needsPractice": "Needs more practice",
+  "totalSessions": "Total Sessions",
+  "averageAccuracy": "Average Accuracy",
+  "totalMinutes": "Total Minutes",
+  "filterByModule": "Filter by Module",
+  "allModules": "All Modules",
+  "highScores": "High Scores",
+  "progressChart": "Progress Over Time",
+  "difficulties": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard",
+    "expert": "Expert"
+  },
+  "keypadTypes": {
+    "calculator": "Calculator Style",
+    "phone": "Phone Style"
+  },
+  "modules": {
+    "addition": {
+      "title": "Addition",
+      "description": "Practice adding numbers"
+    },
+    "subtraction": {
+      "title": "Subtraction",
+      "description": "Practice subtracting numbers"
+    },
+    "multiplication": {
+      "title": "Multiplication",
+      "description": "Practice multiplying numbers"
+    },
+    "division": {
+      "title": "Division",
+      "description": "Practice dividing numbers"
+    },
+    "multiplicationTables": {
+      "title": "Times Tables",
+      "description": "Learn multiplication tables"
+    },
+    "squareRoots": {
+      "title": "Square Roots",
+      "description": "Practice square roots"
+    },
+    "exponents": {
+      "title": "Exponents",
+      "description": "Practice powers and exponents"
+    },
+    "memoryTraining": {
+      "title": "Memory Training",
+      "description": "Train your mental math"
+    },
+    "mixedOperations": {
+      "title": "Mixed Operations",
+      "description": "Practice all operations"
+    }
+  }
+}

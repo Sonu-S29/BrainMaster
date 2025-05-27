@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "Mathe Training",
+  "settings": "Einstellungen",
+  "progress": "Fortschritt",
+  "back": "Zurück",
+  "question": "Frage",
+  "score": "Punkte",
+  "enterAnswer": "Geben Sie Ihre Antwort ein",
+  "submit": "Senden",
+  "difficulty": "Schwierigkeit",
+  "numberOfQuestions": "Anzahl der Fragen",
+  "keypadType": "Tastatur-Typ",
+  "language": "Sprache",
+  "enableSound": "Ton aktivieren",
+  "sessionComplete": "Sitzung abgeschlossen!",
+  "correct": "Richtig",
+  "incorrect": "Falsch",
+  "timeElapsed": "Verstrichene Zeit",
+  "questionsPerMinute": "Fragen/Min",
+  "playAgain": "Nochmal spielen",
+  "backToModules": "Zurück zu Modulen",
+  "excellent": "Ausgezeichnete Arbeit!",
+  "good": "Gute Arbeit!",
+  "fair": "Weiter üben!",
+  "needsPractice": "Braucht mehr Übung",
+  "totalSessions": "Gesamte Sitzungen",
+  "averageAccuracy": "Durchschnittliche Genauigkeit",
+  "totalMinutes": "Gesamte Minuten",
+  "filterByModule": "Nach Modul filtern",
+  "allModules": "Alle Module",
+  "highScores": "Bestleistungen",
+  "progressChart": "Fortschritt über Zeit",
+  "difficulties": {
+    "easy": "Einfach",
+    "medium": "Mittel",
+    "hard": "Schwer",
+    "expert": "Experte"
+  },
+  "keypadTypes": {
+    "calculator": "Taschenrechner-Stil",
+    "phone": "Telefon-Stil"
+  },
+  "modules": {
+    "addition": {
+      "title": "Addition",
+      "description": "Übe Additionen"
+    },
+    "subtraction": {
+      "title": "Subtraktion",
+      "description": "Übe Subtraktionen"
+    },
+    "multiplication": {
+      "title": "Multiplikation",
+      "description": "Übe Multiplikationen"
+    },
+    "division": {
+      "title": "Division",
+      "description": "Übe Divisionen"
+    },
+    "multiplicationTables": {
+      "title": "Einmaleins",
+      "description": "Lerne das Einmaleins"
+    },
+    "squareRoots": {
+      "title": "Quadratwurzeln",
+      "description": "Übe Quadratwurzeln"
+    },
+    "exponents": {
+      "title": "Exponenten",
+      "description": "Übe Potenzen"
+    },
+    "memoryTraining": {
+      "title": "Gedächtnistraining",
+      "description": "Trainiere dein Kopfrechnen"
+    },
+    "mixedOperations": {
+      "title": "Gemischte Operationen",
+      "description": "Übe alle Operationen"
+    }
+  }
+}

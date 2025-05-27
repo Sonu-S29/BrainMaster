@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "Մաթեմատիկական Մարզում",
+  "settings": "Կարգավորումներ",
+  "progress": "Առաջընթաց",
+  "back": "Հետ",
+  "question": "Հարց",
+  "score": "Միավոր",
+  "enterAnswer": "Մուտքագրեք ձեր պատասխանը",
+  "submit": "Ուղարկել",
+  "difficulty": "Բարդություն",
+  "numberOfQuestions": "Հարցերի Քանակ",
+  "keypadType": "Ստեղնաշարի Տեսակ",
+  "language": "Լեզու",
+  "enableSound": "Միացնել Ձայնը",
+  "sessionComplete": "Նիստը Ավարտված է!",
+  "correct": "Ճիշտ",
+  "incorrect": "Սխալ",
+  "timeElapsed": "Անցած Ժամանակ",
+  "questionsPerMinute": "Հարց/Րոպե",
+  "playAgain": "Կրկին Խաղալ",
+  "backToModules": "Վերադառնալ Մոդուլներին",
+  "excellent": "Գերազանց աշխատանք!",
+  "good": "Լավ աշխատանք!",
+  "fair": "Շարունակեք վարժվել!",
+  "needsPractice": "Ավելի շատ վարժանք է պետք",
+  "totalSessions": "Ընդհանուր Նիստեր",
+  "averageAccuracy": "Միջին Ճշտություն",
+  "totalMinutes": "Ընդհանուր Րոպեներ",
+  "filterByModule": "Զտել Մոդուլով",
+  "allModules": "Բոլոր Մոդուլները",
+  "highScores": "Բարձր Միավորներ",
+  "progressChart": "Առաջընթացի Գծապատկեր",
+  "difficulties": {
+    "easy": "Հեշտ",
+    "medium": "Միջին",
+    "hard": "Բարդ",
+    "expert": "Փորձագետ"
+  },
+  "keypadTypes": {
+    "calculator": "Հաշվիչի Ոճ",
+    "phone": "Հեռախոսի Ոճ"
+  },
+  "modules": {
+    "addition": {
+      "title": "Գումարում",
+      "description": "Վարժվեք գումարման մեջ"
+    },
+    "subtraction": {
+      "title": "Հանում",
+      "description": "Վարժվեք հանման մեջ"
+    },
+    "multiplication": {
+      "title": "Բազմապատկում",
+      "description": "Վարժվեք բազմապատկման մեջ"
+    },
+    "division": {
+      "title": "Բաժանում",
+      "description": "Վարժվեք բաժանման մեջ"
+    },
+    "multiplicationTables": {
+      "title": "Բազմապատկման Աղյուսակ",
+      "description": "Սովորեք բազմապատկման աղյուսակը"
+    },
+    "squareRoots": {
+      "title": "Քառակուսի Արմատներ",
+      "description": "Վարժվեք քառակուսի արմատների մեջ"
+    },
+    "exponents": {
+      "title": "Աստիճաններ",
+      "description": "Վարժվեք աստիճանների մեջ"
+    },
+    "memoryTraining": {
+      "title": "Հիշողության Մարզում",
+      "description": "Մարզեք ذهني հաշվարկը"
+    },
+    "mixedOperations": {
+      "title": "Խառը Գործողություններ",
+      "description": "Վարժվեք բոլոր գործողություններում"
+    }
+  }
+}

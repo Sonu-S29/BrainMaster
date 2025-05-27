@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "Математическая Тренировка",
+  "settings": "Настройки",
+  "progress": "Прогресс",
+  "back": "Назад",
+  "question": "Вопрос",
+  "score": "Счёт",
+  "enterAnswer": "Введите ваш ответ",
+  "submit": "Отправить",
+  "difficulty": "Сложность",
+  "numberOfQuestions": "Количество Вопросов",
+  "keypadType": "Тип Клавиатуры",
+  "language": "Язык",
+  "enableSound": "Включить Звук",
+  "sessionComplete": "Сессия Завершена!",
+  "correct": "Правильно",
+  "incorrect": "Неправильно",
+  "timeElapsed": "Времени Прошло",
+  "questionsPerMinute": "Вопросов/Мин",
+  "playAgain": "Играть Снова",
+  "backToModules": "Назад к Модулям",
+  "excellent": "Отличная работа!",
+  "good": "Хорошая работа!",
+  "fair": "Продолжайте практиковаться!",
+  "needsPractice": "Нужно больше практики",
+  "totalSessions": "Всего Сессий",
+  "averageAccuracy": "Средняя Точность",
+  "totalMinutes": "Всего Минут",
+  "filterByModule": "Фильтр по Модулю",
+  "allModules": "Все Модули",
+  "highScores": "Лучшие Результаты",
+  "progressChart": "Прогресс во Времени",
+  "difficulties": {
+    "easy": "Легко",
+    "medium": "Средне",
+    "hard": "Сложно",
+    "expert": "Эксперт"
+  },
+  "keypadTypes": {
+    "calculator": "Стиль Калькулятора",
+    "phone": "Стиль Телефона"
+  },
+  "modules": {
+    "addition": {
+      "title": "Сложение",
+      "description": "Практикуйте сложение"
+    },
+    "subtraction": {
+      "title": "Вычитание",
+      "description": "Практикуйте вычитание"
+    },
+    "multiplication": {
+      "title": "Умножение",
+      "description": "Практикуйте умножение"
+    },
+    "division": {
+      "title": "Деление",
+      "description": "Практикуйте деление"
+    },
+    "multiplicationTables": {
+      "title": "Таблица Умножения",
+      "description": "Изучайте таблицу умножения"
+    },
+    "squareRoots": {
+      "title": "Квадратные Корни",
+      "description": "Практикуйте квадратные корни"
+    },
+    "exponents": {
+      "title": "Степени",
+      "description": "Практикуйте степени"
+    },
+    "memoryTraining": {
+      "title": "Тренировка Памяти",
+      "description": "Тренируйте устный счет"
+    },
+    "mixedOperations": {
+      "title": "Смешанные Операции",
+      "description": "Практикуйте все операции"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "Entraînement Mathématique",
+  "settings": "Paramètres",
+  "progress": "Progrès",
+  "back": "Retour",
+  "question": "Question",
+  "score": "Score",
+  "enterAnswer": "Entrez votre réponse",
+  "submit": "Soumettre",
+  "difficulty": "Difficulté",
+  "numberOfQuestions": "Nombre de Questions",
+  "keypadType": "Type de Clavier",
+  "language": "Langue",
+  "enableSound": "Activer le Son",
+  "sessionComplete": "Session Terminée!",
+  "correct": "Correct",
+  "incorrect": "Incorrect",
+  "timeElapsed": "Temps Écoulé",
+  "questionsPerMinute": "Questions/Min",
+  "playAgain": "Rejouer",
+  "backToModules": "Retour aux Modules",
+  "excellent": "Excellent travail!",
+  "good": "Bon travail!",
+  "fair": "Continuez à pratiquer!",
+  "needsPractice": "Besoin de plus de pratique",
+  "totalSessions": "Sessions Totales",
+  "averageAccuracy": "Précision Moyenne",
+  "totalMinutes": "Minutes Totales",
+  "filterByModule": "Filtrer par Module",
+  "allModules": "Tous les Modules",
+  "highScores": "Meilleurs Scores",
+  "progressChart": "Progrès dans le Temps",
+  "difficulties": {
+    "easy": "Facile",
+    "medium": "Moyen",
+    "hard": "Difficile",
+    "expert": "Expert"
+  },
+  "keypadTypes": {
+    "calculator": "Style Calculatrice",
+    "phone": "Style Téléphone"
+  },
+  "modules": {
+    "addition": {
+      "title": "Addition",
+      "description": "Pratiquez les additions"
+    },
+    "subtraction": {
+      "title": "Soustraction",
+      "description": "Pratiquez les soustractions"
+    },
+    "multiplication": {
+      "title": "Multiplication",
+      "description": "Pratiquez les multiplications"
+    },
+    "division": {
+      "title": "Division",
+      "description": "Pratiquez les divisions"
+    },
+    "multiplicationTables": {
+      "title": "Tables de Multiplication",
+      "description": "Apprenez les tables"
+    },
+    "squareRoots": {
+      "title": "Racines Carrées",
+      "description": "Pratiquez les racines carrées"
+    },
+    "exponents": {
+      "title": "Exposants",
+      "description": "Pratiquez les puissances"
+    },
+    "memoryTraining": {
+      "title": "Entraînement Mental",
+      "description": "Entraînez votre calcul mental"
+    },
+    "mixedOperations": {
+      "title": "Opérations Mixtes",
+      "description": "Pratiquez toutes les opérations"
+    }
+  }
+}

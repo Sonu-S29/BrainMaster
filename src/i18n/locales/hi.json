@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "गणित व्यायाम",
+  "settings": "सेटिंग्स",
+  "progress": "प्रगति",
+  "back": "वापस",
+  "question": "प्रश्न",
+  "score": "स्कोर",
+  "enterAnswer": "अपना उत्तर दर्ज करें",
+  "submit": "सबमिट करें",
+  "difficulty": "कठिनाई",
+  "numberOfQuestions": "प्रश्नों की संख्या",
+  "keypadType": "कीपैड प्रकार",
+  "language": "भाषा",
+  "enableSound": "ध्वनि सक्षम करें",
+  "sessionComplete": "सत्र पूर्ण!",
+  "correct": "सही",
+  "incorrect": "गलत",
+  "timeElapsed": "समय बीता",
+  "questionsPerMinute": "प्रश्न/मिनट",
+  "playAgain": "फिर से खेलें",
+  "backToModules": "मॉड्यूल पर वापस",
+  "excellent": "उत्कृष्ट कार्य!",
+  "good": "अच्छा काम!",
+  "fair": "अभ्यास जारी रखें!",
+  "needsPractice": "अधिक अभ्यास की आवश्यकता",
+  "totalSessions": "कुल सत्र",
+  "averageAccuracy": "औसत सटीकता",
+  "totalMinutes": "कुल मिनट",
+  "filterByModule": "मॉड्यूल द्वारा फ़िल्टर करें",
+  "allModules": "सभी मॉड्यूल",
+  "highScores": "उच्च स्कोर",
+  "progressChart": "समय के साथ प्रगति",
+  "difficulties": {
+    "easy": "आसान",
+    "medium": "मध्यम",
+    "hard": "कठिन",
+    "expert": "विशेषज्ञ"
+  },
+  "keypadTypes": {
+    "calculator": "कैलकुलेटर स्टाइल",
+    "phone": "फोन स्टाइल"
+  },
+  "modules": {
+    "addition": {
+      "title": "जोड़",
+      "description": "जोड़ का अभ्यास करें"
+    },
+    "subtraction": {
+      "title": "घटाव",
+      "description": "घटाव का अभ्यास करें"
+    },
+    "multiplication": {
+      "title": "गुणा",
+      "description": "गुणा का अभ्यास करें"
+    },
+    "division": {
+      "title": "भाग",
+      "description": "भाग का अभ्यास करें"
+    },
+    "multiplicationTables": {
+      "title": "पहाड़े",
+      "description": "पहाड़े सीखें"
+    },
+    "squareRoots": {
+      "title": "वर्गमूल",
+      "description": "वर्गमूल का अभ्यास करें"
+    },
+    "exponents": {
+      "title": "घातांक",
+      "description": "घातांक का अभ्यास करें"
+    },
+    "memoryTraining": {
+      "title": "स्मृति प्रशिक्षण",
+      "description": "मानसिक गणित का अभ्यास करें"
+    },
+    "mixedOperations": {
+      "title": "मिश्रित संक्रियाएं",
+      "description": "सभी संक्रियाओं का अभ्यास करें"
+    }
+  }
+}

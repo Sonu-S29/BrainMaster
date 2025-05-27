@@ -1,0 +1,82 @@
+
+{
+  "appTitle": "Entrenamiento Matemático",
+  "settings": "Configuración",
+  "progress": "Progreso",
+  "back": "Atrás",
+  "question": "Pregunta",
+  "score": "Puntuación",
+  "enterAnswer": "Ingresa tu respuesta",
+  "submit": "Enviar",
+  "difficulty": "Dificultad",
+  "numberOfQuestions": "Número de Preguntas",
+  "keypadType": "Tipo de Teclado",
+  "language": "Idioma",
+  "enableSound": "Habilitar Sonido",
+  "sessionComplete": "¡Sesión Completada!",
+  "correct": "Correcto",
+  "incorrect": "Incorrecto",
+  "timeElapsed": "Tiempo Transcurrido",
+  "questionsPerMinute": "Preguntas/Min",
+  "playAgain": "Jugar de Nuevo",
+  "backToModules": "Volver a Módulos",
+  "excellent": "¡Excelente trabajo!",
+  "good": "¡Buen trabajo!",
+  "fair": "¡Sigue practicando!",
+  "needsPractice": "Necesita más práctica",
+  "totalSessions": "Sesiones Totales",
+  "averageAccuracy": "Precisión Promedio",
+  "totalMinutes": "Minutos Totales",
+  "filterByModule": "Filtrar por Módulo",
+  "allModules": "Todos los Módulos",
+  "highScores": "Mejores Puntuaciones",
+  "progressChart": "Progreso en el Tiempo",
+  "difficulties": {
+    "easy": "Fácil",
+    "medium": "Medio",
+    "hard": "Difícil",
+    "expert": "Experto"
+  },
+  "keypadTypes": {
+    "calculator": "Estilo Calculadora",
+    "phone": "Estilo Teléfono"
+  },
+  "modules": {
+    "addition": {
+      "title": "Suma",
+      "description": "Practica sumas"
+    },
+    "subtraction": {
+      "title": "Resta",
+      "description": "Practica restas"
+    },
+    "multiplication": {
+      "title": "Multiplicación",
+      "description": "Practica multiplicaciones"
+    },
+    "division": {
+      "title": "División",
+      "description": "Practica divisiones"
+    },
+    "multiplicationTables": {
+      "title": "Tablas de Multiplicar",
+      "description": "Aprende las tablas"
+    },
+    "squareRoots": {
+      "title": "Raíces Cuadradas",
+      "description": "Practica raíces cuadradas"
+    },
+    "exponents": {
+      "title": "Exponentes",
+      "description": "Practica potencias"
+    },
+    "memoryTraining": {
+      "title": "Entrenamiento Mental",
+      "description": "Entrena tu cálculo mental"
+    },
+    "mixedOperations": {
+      "title": "Operaciones Mixtas",
+      "description": "Practica todas las operaciones"
+    }
+  }
+}
