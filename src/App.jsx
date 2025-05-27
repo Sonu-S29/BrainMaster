@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './App.css';
@@ -8,6 +7,7 @@ import Settings from './components/Settings';
 import Progress from './components/Progress';
 import { initializeStorage, getSettings, saveSettings } from './utils/storage';
 import './i18n/i18n';
+import AdBanner from './components/AdBanner'; // Import the AdBanner component
 
 function App() {
   const { t } = useTranslation();
@@ -93,6 +93,10 @@ function App() {
           {theme === 'dark' ? '🌞' : '🌙'} {theme === 'dark' ? 'Light' : 'Dark'}
         </button>
       </header>
+
+      {/* Display the Ad Banner on the home page */}
+      {currentView === 'home' && <AdBanner />}
+
       <main className="app-main">
         {renderCurrentView()}
       </main>
