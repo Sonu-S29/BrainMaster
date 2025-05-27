@@ -1,5 +1,5 @@
 
-export function generateQuestion(type, difficulty) {
+export function generateQuestion(type, difficulty, customSettings = {}) {
   const ranges = {
     easy: { min: 1, max: 10 },
     medium: { min: 1, max: 50 },
@@ -19,13 +19,18 @@ export function generateQuestion(type, difficulty) {
     case 'division':
       return generateDivision(range);
     case 'multiplicationTables':
-      return generateMultiplicationTable();
+      return generateMultiplicationTable(customSettings);
     case 'squareRoots':
-      return generateSquareRoot(range);
+      return generateSquareRoot();
     case 'exponents':
-      return generateExponent(range);
+    case 'exponentsPractice':
+      return generateExponent(customSettings);
     case 'memoryTraining':
       return generateMemoryTraining(range);
+    case 'additionSubtraction':
+      return randomChoice([generateAddition(range), generateSubtraction(range)]);
+    case 'multiplicationDivision':
+      return randomChoice([generateMultiplication(range), generateDivision(range)]);
     case 'mixedOperations':
       return generateMixed(range);
     default:
@@ -78,9 +83,9 @@ function generateDivision(range) {
   };
 }
 
-function generateMultiplicationTable() {
-  const table = randomInt(2, 12);
-  const multiplier = randomInt(1, 12);
+function generateMultiplicationTable(customSettings = {}) {
+  const table = customSettings.tableOf || randomInt(2, 12);
+  const multiplier = randomInt(1, customSettings.showTill || 12);
   return {
     display: `${table} × ${multiplier} = ?`,
     answer: table * multiplier,
@@ -89,8 +94,9 @@ function generateMultiplicationTable() {
   };
 }
 
-function generateSquareRoot(range) {
-  const perfectSquares = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225];
+function generateSquareRoot() {
+  // Perfect squares from 1 to 100
+  const perfectSquares = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
   const square = perfectSquares[randomInt(0, perfectSquares.length - 1)];
   return {
     display: `√${square} = ?`,
@@ -100,13 +106,16 @@ function generateSquareRoot(range) {
   };
 }
 
-function generateExponent(range) {
-  const base = randomInt(2, 10);
-  const exponent = randomInt(2, 4);
+function generateExponent(customSettings = {}) {
+  const startValue = customSettings.startValue || 2;
+  const endValue = customSettings.endValue || 10;
+  const exponentOf = customSettings.exponentOf || randomInt(2, 4);
+  
+  const base = randomInt(startValue, endValue);
   return {
-    display: `${base}^${exponent} = ?`,
-    answer: Math.pow(base, exponent),
-    operands: [base, exponent],
+    display: `${base}^${exponentOf} = ?`,
+    answer: Math.pow(base, exponentOf),
+    operands: [base, exponentOf],
     operation: '^'
   };
 }
@@ -124,9 +133,14 @@ function generateMemoryTraining(range) {
 }
 
 function generateMixed(range) {
-  const operations = ['addition', 'subtraction', 'multiplication', 'division'];
+  const operations = [
+    () => generateAddition(range),
+    () => generateSubtraction(range),
+    () => generateMultiplication(range),
+    () => generateDivision(range)
+  ];
   const randomOp = operations[randomInt(0, operations.length - 1)];
-  return generateQuestion(randomOp, 'medium');
+  return randomOp();
 }
 
 export function checkAnswer(question, userAnswer) {
@@ -135,4 +149,8 @@ export function checkAnswer(question, userAnswer) {
 
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function randomChoice(array) {
+  return array[randomInt(0, array.length - 1)];
 }

@@ -13,6 +13,7 @@ function App() {
   const { t } = useTranslation();
   const [currentView, setCurrentView] = useState('home');
   const [selectedModule, setSelectedModule] = useState(null);
+  const [theme, setTheme] = useState('dark');
   const [settings, setSettings] = useState({
     difficulty: 'medium',
     questionCount: 20,
@@ -27,7 +28,10 @@ function App() {
     if (savedSettings) {
       setSettings(savedSettings);
     }
-  }, []);
+    
+    // Set theme
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
   const handleSettingsChange = (newSettings) => {
     setSettings(newSettings);
@@ -42,6 +46,10 @@ function App() {
   const handleBack = () => {
     setCurrentView('home');
     setSelectedModule(null);
+  };
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
   };
 
   const renderCurrentView = () => {
@@ -79,6 +87,9 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1>{t('appTitle')}</h1>
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === 'dark' ? '🌞' : '🌙'} {theme === 'dark' ? 'Light' : 'Dark'}
+        </button>
       </header>
       <main className="app-main">
         {renderCurrentView()}

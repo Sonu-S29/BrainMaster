@@ -2,6 +2,13 @@
 import React from 'react';
 
 function Keypad({ type, onInput }) {
+  const calculatorLayout = [
+    ['7', '8', '9', 'clear'],
+    ['4', '5', '6', 'backspace'],
+    ['1', '2', '3', '.'],
+    ['0', '-', '+', '=']
+  ];
+
   const phoneLayout = [
     ['1', '2', '3'],
     ['4', '5', '6'],
@@ -9,21 +16,14 @@ function Keypad({ type, onInput }) {
     ['clear', '0', 'backspace']
   ];
 
-  const calculatorLayout = [
-    ['7', '8', '9', 'clear'],
-    ['4', '5', '6', 'backspace'],
-    ['1', '2', '3', '.'],
-    ['0', '00', '-', '+']
-  ];
+  const layout = type === 'calculator' ? calculatorLayout : phoneLayout;
 
-  const layout = type === 'phone' ? phoneLayout : calculatorLayout;
-
-  const getButtonText = (value) => {
-    switch (value) {
+  const getButtonText = (key) => {
+    switch (key) {
       case 'clear': return 'C';
       case 'backspace': return '⌫';
-      case '00': return '00';
-      default: return value;
+      case '=': return '=';
+      default: return key;
     }
   };
 
