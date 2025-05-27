@@ -88,6 +88,33 @@ function Settings({ settings, onSettingsChange, onBack }) {
           <label htmlFor="sound">{t('enableSound')}</label>
         </div>
       </div>
+
+      <div className="settings-group">
+        <div className="checkbox-group">
+          <input
+            type="checkbox"
+            id="timer"
+            checked={settings.timerEnabled}
+            onChange={(e) => handleChange('timerEnabled', e.target.checked)}
+          />
+          <label htmlFor="timer">{t('enableTimer')}</label>
+        </div>
+      </div>
+
+      {settings.timerEnabled && (
+        <div className="settings-group">
+          <label>{t('timerDuration')}</label>
+          <select
+            value={settings.timerDuration}
+            onChange={(e) => handleChange('timerDuration', parseInt(e.target.value))}
+          >
+            <option value={5}>5 {t('seconds')}</option>
+            <option value={10}>10 {t('seconds')}</option>
+            <option value={15}>15 {t('seconds')}</option>
+            <option value={20}>20 {t('seconds')}</option>
+          </select>
+        </div>
+      )}
     </div>
   );
 }

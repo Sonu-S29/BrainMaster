@@ -1,10 +1,11 @@
+export function generateQuestion(type, difficulty = 'medium', customSettings = {}) {
+  let question = {};
 
-export function generateQuestion(type, difficulty, customSettings = {}) {
   const ranges = {
     easy: { min: 1, max: 10 },
-    medium: { min: 1, max: 50 },
-    hard: { min: 1, max: 100 },
-    expert: { min: 1, max: 500 }
+    medium: { min: 5, max: 25 },
+    hard: { min: 10, max: 50 },
+    expert: { min: 25, max: 100 }
   };
 
   const range = ranges[difficulty];
@@ -110,7 +111,7 @@ function generateExponent(customSettings = {}) {
   const startValue = customSettings.startValue || 2;
   const endValue = customSettings.endValue || 10;
   const exponentOf = customSettings.exponentOf || randomInt(2, 4);
-  
+
   const base = randomInt(startValue, endValue);
   return {
     display: `${base}^${exponentOf} = ?`,

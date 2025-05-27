@@ -12,7 +12,9 @@ export function initializeStorage() {
       questionCount: 20,
       keypadType: 'calculator',
       soundEnabled: true,
-      language: 'en'
+      language: 'en',
+      timerEnabled: false,
+      timerDuration: 10
     };
     localStorage.setItem(STORAGE_KEYS.SETTINGS, JSON.stringify(defaultSettings));
   }

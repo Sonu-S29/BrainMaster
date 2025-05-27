@@ -15,6 +15,8 @@ function PracticeModule({ module, settings, onBack }) {
   const [startTime, setStartTime] = useState(Date.now());
   const [isComplete, setIsComplete] = useState(false);
   const [showResults, setShowResults] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(null);
+  const [timerActive, setTimerActive] = useState(false);
   const [showCustomInputs, setShowCustomInputs] = useState(false);
   const [customSettings, setCustomSettings] = useState({
     tableOf: 2,
@@ -32,8 +34,64 @@ function PracticeModule({ module, settings, onBack }) {
       setShowCustomInputs(false);
       generateNewQuestion();
       setStartTime(Date.now());
+      if (settings.timerEnabled) {
+        setTimeLeft(settings.timerDuration);
+        setTimerActive(true);
+      }
     }
   }, [module]);
+
+  // Timer effect
+  useEffect(() => {
+    let interval = null;
+    if (timerActive && timeLeft > 0 && settings.timerEnabled) {
+      interval = setInterval(() => {
+        setTimeLeft(timeLeft => {
+          if (timeLeft <= 1) {
+            setTimerActive(false);
+            handleTimeUp();
+            return 0;
+          }
+          return timeLeft - 1;
+        });
+      }, 1000);
+    } else if (!timerActive || timeLeft === 0) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [timerActive, timeLeft, settings.timerEnabled]);
+
+  const handleTimeUp = () => {
+    // Auto-submit as incorrect when time runs out
+    setScore(prev => ({ ...prev, incorrect: prev.incorrect + 1 }));
+    
+    const nextIndex = questionIndex + 1;
+    if (nextIndex >= settings.questionCount) {
+      setIsComplete(true);
+      const endTime = Date.now();
+      const totalTime = Math.round((endTime - startTime) / 1000);
+      const accuracy = Math.round(score.correct / settings.questionCount * 100);
+      
+      saveScore(module.id, {
+        score: score.correct,
+        total: settings.questionCount,
+        accuracy,
+        time: totalTime,
+        difficulty: settings.difficulty,
+        date: new Date().toISOString()
+      });
+      
+      setTimeout(() => setShowResults(true), 1000);
+    } else {
+      setQuestionIndex(nextIndex);
+      setUserAnswer('');
+      generateNewQuestion();
+      if (settings.timerEnabled) {
+        setTimeLeft(settings.timerDuration);
+        setTimerActive(true);
+      }
+    }
+  };
 
   const generateNewQuestion = useCallback(() => {
     const question = generateQuestion(module.id, settings.difficulty, customSettings);
@@ -44,6 +102,10 @@ function PracticeModule({ module, settings, onBack }) {
     setShowCustomInputs(false);
     generateNewQuestion();
     setStartTime(Date.now());
+    if (settings.timerEnabled) {
+      setTimeLeft(settings.timerDuration);
+      setTimerActive(true);
+    }
   };
 
   const handleSubmit = () => {
@@ -84,6 +146,10 @@ function PracticeModule({ module, settings, onBack }) {
       setQuestionIndex(nextIndex);
       setUserAnswer('');
       generateNewQuestion();
+      if (settings.timerEnabled) {
+        setTimeLeft(settings.timerDuration);
+        setTimerActive(true);
+      }
     }
   };
 
@@ -105,6 +171,10 @@ function PracticeModule({ module, settings, onBack }) {
     setShowResults(false);
     setStartTime(Date.now());
     generateNewQuestion();
+    if (settings.timerEnabled) {
+      setTimeLeft(settings.timerDuration);
+      setTimerActive(true);
+    }
   };
 
   if (showResults) {
@@ -238,6 +308,11 @@ function PracticeModule({ module, settings, onBack }) {
         <div className="progress-info">
           <span>{t('question')} {questionIndex + 1}/{settings.questionCount}</span>
           <span>{t('score')}: {score.correct}/{questionIndex}</span>
+          {settings.timerEnabled && (
+            <span className={`timer ${timeLeft <= 5 ? 'timer-warning' : ''}`}>
+              {t('timeLeft')}: {timeLeft}s
+            </span>
+          )}
         </div>
       </div>
 
