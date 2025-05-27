@@ -1,11 +1,10 @@
-
 const CACHE_NAME = 'math-workout-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/static/js/bundle.js',
-  '/static/css/main.css',
-  '/manifest.json'
+  '/BrainMaster/',  // Ensure the base path is used
+  '/BrainMaster/index.html',
+  '/BrainMaster/static/js/bundle.js',
+  '/BrainMaster/static/css/main.css',
+  '/BrainMaster/manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
@@ -21,10 +20,9 @@ self.addEventListener('fetch', (event) => {
       .then((response) => {
         // Return cached version or fetch from network
         return response || fetch(event.request);
-      }
+      })
     )
-  );
-});
+  });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(

@@ -20,7 +20,8 @@ export function register() {
     }
 
     window.addEventListener('load', () => {
-      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+      // Update the service worker URL to include the GitHub Pages base path
+      const swUrl = `/BrainMaster/service-worker.js`;  // Adjust the path to include /BrainMaster/
 
       if (isLocalhost) {
         // In localhost, we need to ensure service workers work as expected.
@@ -36,7 +37,7 @@ export function register() {
 // Register the service worker in production mode
 function registerValidSW(swUrl) {
   navigator.serviceWorker
-    .register(swUrl)
+    .register(swUrl, { scope: '/BrainMaster/' })  // Set scope to /BrainMaster/
     .then(registration => {
       console.log('Service Worker registered with scope: ', registration.scope);
     })
