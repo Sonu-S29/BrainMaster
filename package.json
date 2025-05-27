@@ -1,15 +1,15 @@
 {
   "name": "react-javascript",
-  "homepage": "https://Sonu-S29.github.io/BrainMaster",
+  "homepage": "https://sonu-s29.github.io/BrainMaster",
   "version": "1.0.0",
   "type": "module",
   "description": "React TypeScript on Replit, using Vite bundler",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "predeploy": "vite build",
-  "deploy": "gh-pages -d dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "vite build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
